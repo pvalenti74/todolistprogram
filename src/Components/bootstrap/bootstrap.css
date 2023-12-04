@@ -1,0 +1,49 @@
+.header {
+    font-family: MyFont;
+    background-color: transparent;
+    margin-top: 10px;
+    text-align: center;
+    border: 10px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+}
+
+body{
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    /* Gradient Animation  */
+    background-image: var(--gradient);
+    background-size: 600%;
+    animation: bg-animation 10s infinite alternate;
+  }
+
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    0% {background-position: right;}
+    100% {background-position: left;}
+  }
+
+/* TABS */
+.t{
+    margin-bottom: 3px;
+    margin-top: 30px;
+
+}
+
+.nav-pills .nav-link {
+    border-radius: 5px;
+    color: black;
+    background-color: white;
+   
+}
+
+.tab-content {
+    margin-top: 5px;
+    border: 1px #84d140;
+    background-color: white;
+}
+
+.nav-pills .nav-item:not(:nth-last-child(0)) .nav-link {
+    border-right: 1px solid white
+}

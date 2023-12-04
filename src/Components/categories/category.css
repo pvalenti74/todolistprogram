@@ -1,0 +1,22 @@
+.table-secondary th{
+    background-color: #51aa90 !important;
+}
+
+.catTable tbody{
+    background-color: #51aa90 !important;
+}
+
+.header{
+    background-color: #51aa90 !important;
+}
+
+.createBtn {
+    color: #51aa90 !important;
+    border-color: #51aa90 !important;
+}
+
+.catBody{
+    border: #51aa90;
+    border-radius: 5%;
+    outline: #51aa90;
+}

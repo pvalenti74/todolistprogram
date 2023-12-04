@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* Custom variable */
+:root {
+    --gradient: linear-gradient(
+      45deg,
+      #075a9e,
+      #51aa90,
+      #075a9e,
+      #51aa90,
+      #075a9e,
+      #51aa90
+    );
+}
+
+/* Custom Fonts */
+@font-face {
+  font-family: 'MyFont';
+  src: local('MyFont'), url(./assets/Astral\ Delight\ Black.ttf) format('woff');
+}

@@ -1,38 +1,104 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+  background-repeat: no-repeat;
   min-height: 100vh;
+  /* Gradient Animation  */
+  background-image: var(--gradient);
+  background-size: 600%;
+  animation: bg-animation 5s infinite alternate;
+  }
+
+  @keyframes bg-animation {
+    0% {background-position: left;}
+    0% {background-position: right;}
+    100% {background-position: left;}
+  }
+
+.container{
+  height:100vh;
+  overflow: hidden;
+}
+
+.pText{
+  font-size: x-large;
+  color: #51aa90;
+}
+
+.navClass {
+  background-color: transparent;
+  font-family: MyFont;
+  font-variant: small-caps;
+  text-decoration: underline 2px #51aa90;
+  border-radius: 1px;
+  font-size: 50px;
+  
+}
+
+.navLink{
+  color: black;
+  text-decoration: underline 2px black;
+  margin-left: 15px;
+}
+
+.navLink:hover{
+  color: #51aa90;
+}
+
+ .homeBTN {
+  margin-right: 9px;
+  border-radius: 45%;
+  margin-left: 5px;
+  color: #ffffff;
+  border-color: #19fa00;
+  background: none;
+  background-color: transparent;
+  outline: none;
+ }
+
+.nav-link {
+  color: #ff0202;
+  padding: 5px;
+  margin-right: 5px;
+}
+
+.navClass {
+  background-color:#075a9e;
+}
+
+ 
+
+.footBar {
+  background-color:#073860;
+}
+
+.welcomeCon {
+  max-height: 75vh;
+  display:flexbox;
+  
+}
+
+.welcomeCon h1 {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: MyFont;
+  font-variant: small-caps;
 }
 
-.App-link {
-  color: #61dafb;
+.WelcomeImg img {
+  object-fit: fill;
+  max-height: 50vh;
+  max-width: 50vh;
+  border-radius: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.welcomeText{
+  background-color: #075a9e;
+  border-radius: 5%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  outline-width: 5px;
 }
+
+.HeaderText{
+  color: #aa51a0;
+  text-decoration: underline;
+}
+ 

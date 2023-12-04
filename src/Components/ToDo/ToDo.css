@@ -1,0 +1,74 @@
+.header{
+    background-color: #51aa90 !important;
+}
+
+.btn{
+    color: #51aa90 !important;
+    border-color: #51aa90 !important;
+}
+.createBtn {
+    color: #51aa90 !important;
+    border-color: #51aa90 !important;
+}
+
+.createBtn:hover{
+    color: #075a9e !important;
+    border-color: #075a9e !important;
+}
+
+.filter-btn{
+    color: #51aa90 !important;
+    border-color: #51aa90 !important;
+}
+
+.todoBox{
+    background-color: #075a9e !important;
+    border-radius: 5%;
+}
+
+.todoCard {
+    padding: 11px;
+    margin: 8px;
+    color: #075a9e !important;
+    background-color: #51aa90 !important;
+    border-radius: 5%;
+    box-shadow:
+        inset #009688 0 0 0 5px, 
+      inset #059c8e 0 0 0 1px, 
+      inset #0cab9c 0 0 0 10px, 
+      inset #1fbdae 0 0 0 11px, 
+      inset #8ce9ff 0 0 0 16px, 
+      inset #48e4d6 0 0 0 17px, 
+      inset #e5f9f7 0 0 0 21px, 
+      inset #bfecf7 0 0 0 22px;
+  }
+
+input.checkbox{
+    accent-color: #075a9e !important;
+    height: 2em;
+    width: 2em;
+}
+
+.admin-btn{
+    position: absolute;
+    top: 5em;
+    font-size: 1.2em;
+    background: none;
+    outline: none;
+    border: 2px solid black;
+    border-radius: 5px;
+    transition: .25s;
+}
+
+.admin-btn#editLink{
+    left: 1.5em;
+}
+.admin-btn#deleteLink{
+    left: 5.75em;
+}
+
+.hText{
+    font-family: MyFont;
+    font-variant: small-caps;
+
+}
