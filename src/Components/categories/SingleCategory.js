@@ -17,7 +17,7 @@ export default function SingleCategory(props) {
   const deleteCat = (id) => {
     if(window.confirm(`Are you sure? You're about to delete ${catName}?`)){
       // Call the axios delete command then call on categories to refresh
-      axios.delete(`https://localhost:7254/api/Categories/${id}`).then(() => {
+      axios.delete(`https://localhost:7182/api/Categories/${id}`).then(() => {
         props.getCategories()
       })
     }
@@ -32,7 +32,6 @@ export default function SingleCategory(props) {
           <button onClick={() => setShowEdit(true)} className="m-1 rounded">
              <FaEdit/> Edit
           </button>
-
           <button onClick={() => deleteCat(categoryId)} className="m-1 rounded">
              <FaTrashAlt/> Delete
           </button>

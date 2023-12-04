@@ -15,7 +15,7 @@ export default function ToDoForm(props) {
     const {currentUser} = useAuth()
 
     useEffect(() => {
-        axios.get(`https://localhost:7254/api/Categories`).then((response) => {
+        axios.get(`https://localhost:7182/api/Categories`).then((response) => {
             console.log(response)
             setCategories(response.data)
         })
@@ -27,7 +27,7 @@ export default function ToDoForm(props) {
              
             const toDoToCreate = values
  
-            axios.post(`https://localhost:7254/api/ToDoes`, toDoToCreate).then(() => {
+            axios.post(`https://localhost:7182/api/ToDoes`, toDoToCreate).then(() => {
                 props.setShowCreate(false)
                 props.getToDos()
             })
@@ -40,7 +40,7 @@ export default function ToDoForm(props) {
                 categoryId: values.categoryId
             }
             //seconf er make the put request using axios
-            axios.put(`https://localhost:7254/api/ToDoes/${props.todo.toDoId}`, toDoToEdit).then(() => {
+            axios.put(`https://localhost:7182/api/ToDoes/${props.todo.toDoId}`, toDoToEdit).then(() => {
                 props.getToDos()
                 props.setShowEdit(false)
             })

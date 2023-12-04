@@ -5,7 +5,7 @@ import SingleToDo from './SingleToDo';
 import FilterCat from './FilterCat';
 import {useAuth} from '../../contexts/AuthContext'
 import ToDoCreate from './ToDoCreate';
-import './todo.css'
+import './ToDo.css'
 
 
 export default function ToDos() {
@@ -26,7 +26,7 @@ export default function ToDos() {
 
     //Get 
     const getToDos = () => {
-        axios.get(`https://localhost:7254/api/ToDoes`).then(response => {
+        axios.get(`https://localhost:7182/api/ToDoes`).then(response => {
             console.log(response)
             setToDos(response.data)
         })

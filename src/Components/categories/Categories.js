@@ -4,7 +4,7 @@ import axios from 'axios'
 import SingleCategory from './SingleCategory'
 import { useAuth } from '../../contexts/AuthContext'
 import CatCreate from './CatCreate'
-import './category.css'
+import './Category.css'
 
 export default function Categories() {
     //LOGIC
@@ -18,7 +18,7 @@ export default function Categories() {
     const [showCreate, setShowCreate] = useState(false)
 
     const getCategories = () => {
-        axios.get('https://localhost:7254/api/Categories').then((response) => {
+        axios.get('https://localhost:7182/api/Categories').then((response) => {
             console.log(response)
             setCategories(response.data)
         })
@@ -61,7 +61,6 @@ export default function Categories() {
                 <table className='table my-3'>
                     <thead className='table-secondary text-uppercase'>
                         <tr>
-                            {' '}
                             {/*Table Row*/}
                             <th className='catTable'>Name</th>
                             <th className='catTable'>Description</th>

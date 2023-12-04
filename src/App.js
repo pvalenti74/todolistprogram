@@ -4,7 +4,7 @@ import Login from './components/Auth/Login'
 import Navigation from './components/Navigation'
 import AuthProvider from './contexts/AuthContext'
 import Footer from './components/Footer'
-import Welcome from './components/Welcome'
+import Welcome from './components/Welcome/Welcome'
 import Categories from './components/Categories/Categories'
 import ToDos from './components/ToDo/ToDos'
 

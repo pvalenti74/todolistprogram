@@ -12,7 +12,7 @@ export default function CatForm(props) {
             //If the prop check fails then we enter CREATE mode
             const catToCreate = values
             //send the object with axios
-            axios.post('https://localhost:7254/api/Categories', catToCreate).then(() => {
+            axios.post('https://localhost:7182/api/Categories', catToCreate).then(() => {
                 //We close the create form and call a get axios call to refresh our category table
                 props.setShowCreate(false)
                 props.getCategories() // calls the function to reset categories
@@ -24,7 +24,7 @@ export default function CatForm(props) {
                 catName: values.catName,
                 catDesc: values.catDesc,
             }
-            axios.put(`https://localhost:7254/api/Categories/${props.category.categoryId}`, catToEdit).then(() => {
+            axios.put(`https://localhost:7182/api/Categories/${props.category.categoryId}`, catToEdit).then(() => {
                 props.setShowEdit(false)
                 props.getCategories()
             })

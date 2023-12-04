@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom'
 import { Nav, Navbar} from 'react-bootstrap'
 import {useAuth} from '../contexts/AuthContext'
 import '../App.css'
-import { HiHome} from 'react-icons/hi'
-import Welcome from './Welcome'
+//import { HiHome} from 'react-icons/hi'
+//import Welcome from './Welcome/Welcome'
 
 export default function Navigation() {
     //deconstuct
@@ -14,7 +14,7 @@ export default function Navigation() {
      
      {/* <button className='homeBTN' onClick={<Welcome/>}> <HiHome/> </button> */}
      <a href='/' className='navLink'>
-        <span class="brand-text">TO-DO APP</span>
+        <span className="brand-text">TO-DO APP</span>
      </a>
         {/* Hamburger */}
         <Navbar.Toggle/>

@@ -26,7 +26,7 @@ code {
 }
 
 /* Custom Fonts */
-@font-face {
+/* @font-face {
   font-family: 'MyFont';
   src: local('MyFont'), url(./assets/Astral\ Delight\ Black.ttf) format('woff');
-}
+} */

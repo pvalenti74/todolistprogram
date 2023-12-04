@@ -9,7 +9,7 @@ export default function Profile() {
   return (
     <span className="profile p-2">
         Hello {!currentUser.displayName ? currentUser.email : currentUser.displayName}
-        <img src={currentUser.photoURL} alt={currentUser.email} photo />
+        <img src={currentUser.photoURL} alt={currentUser.email} />
     </span>
   )
 }

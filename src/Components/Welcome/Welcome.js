@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Row } from 'react-bootstrap'
-import { useAuth } from '../contexts/AuthContext'
-import HeroShot from '../assets/HeroShot.jpg'
+import { useAuth } from '../../contexts/AuthContext'
+import HeroShot from '../../assets/HeroShot.jpg'
 
 export default function Welcome() {
     const { currentUser } = useAuth()
