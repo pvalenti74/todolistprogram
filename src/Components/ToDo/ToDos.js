@@ -26,7 +26,7 @@ export default function ToDos() {
 
     //Get 
     const getToDos = () => {
-        axios.get(`https://localhost:7182/api/ToDoes`).then(response => {
+        axios.get(`https://localhost:7182/api/ToDos`).then(response => {
             console.log(response)
             setToDos(response.data)
         })

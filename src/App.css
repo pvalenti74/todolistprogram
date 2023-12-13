@@ -4,7 +4,7 @@
   /* Gradient Animation  */
   background-image: var(--gradient);
   background-size: 600%;
-  animation: bg-animation 5s infinite alternate;
+  animation: bg-animation 7s infinite alternate;
   }
 
   @keyframes bg-animation {
@@ -20,14 +20,14 @@
 
 .pText{
   font-size: x-large;
-  color: #51aa90;
+  color: #ffffff;
 }
 
 .navClass {
   background-color: transparent;
   font-family: MyFont;
   font-variant: small-caps;
-  text-decoration: underline 2px #51aa90;
+  text-decoration: underline 2px #000000;
   border-radius: 1px;
   font-size: 50px;
   
@@ -40,7 +40,7 @@
 }
 
 .navLink:hover{
-  color: #51aa90;
+  color: rgb(0, 255, 30);
 }
 
  .homeBTN {
@@ -61,13 +61,13 @@
 }
 
 .navClass {
-  background-color:#075a9e;
+  background-color:rgb(32, 255, 2)133, 242;
 }
 
  
 
 .footBar {
-  background-color:#073860;
+  background-color:#000000;
 }
 
 .welcomeCon {
@@ -91,14 +91,14 @@
 }
 
 .welcomeText{
-  background-color: #075a9e;
+  background-color: #000000;
   border-radius: 5%;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
   outline-width: 5px;
 }
 
 .HeaderText{
-  color: #aa51a0;
+  color: rgba(255, 255, 255, 0.51);
   text-decoration: underline;
 }
  

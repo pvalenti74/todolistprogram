@@ -15,7 +15,7 @@ export default function SingleToDo(props) {
 
     const deleteToDo = (id) => {
         if (window.confirm(`Are you sure? You're about to delete: ${name}`)) {
-            axios.delete(`https://localhost:7182/api/ToDoes/${id}`).then(() => {
+            axios.delete(`https://localhost:7182/api/ToDos/${id}`).then(() => {
                 props.getToDos()
             })
         }
@@ -29,7 +29,7 @@ export default function SingleToDo(props) {
             categoryId: props.todo.categoryId,
         }
         //Used to update the card after checking the box
-        axios.put(`https://localhost:7182/api/ToDoes/${props.todo.toDoId}`, updatedToDo).then((response) => {
+        axios.put(`https://localhost:7182/api/ToDos/${props.todo.toDoId}`, updatedToDo).then((response) => {
             props.getToDos()
         })
     }
@@ -39,14 +39,14 @@ export default function SingleToDo(props) {
             <Card.Body>
                 <Card.Title>
                     <h3>
-                        {name} :{done === true && <h3 className='text-success'>Completed!</h3>}
-                        {done !== true && <h3 className='text-danger'>Not-Completed</h3>}
+                        {name} :{done === true && <span className='text-success'>Completed!</span>}
+                        {done !== true && <span className='text-danger'>Not-Completed</span>}
                     </h3>
                 </Card.Title>
                 <Card.Text>
                     {/* EDIT / DELETE actions for admin only */}
                     {currentUser.email === process.env.REACT_APP_ADMIN_EMAIL && (
-                        <div>
+                        <>
                             <button onClick={() => setShowEdit(true)} id='editLink' className='admin-btn'>
                                 <FaEdit /> Edit
                             </button>
@@ -57,7 +57,7 @@ export default function SingleToDo(props) {
                             {showEdit && (
                                 <ToDoEdit todo={props.todo} showEdit={showEdit} setShowEdit={setShowEdit} getToDos={props.getToDos} />
                             )}
-                        </div>
+                        </>
                     )}
                 </Card.Text>
                 <input className='checkbox' type='checkbox' checked={props.todo.done} onChange={() => flipDone()}/>
